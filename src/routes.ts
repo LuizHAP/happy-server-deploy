@@ -9,5 +9,6 @@ routes.get('/', (request, response) => {
 })
 
 routes.post('/orphanages', OrphanagesController.create)
+routes.get('/orphanages', OrphanagesController.index)
 
 export default routes
