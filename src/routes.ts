@@ -8,7 +8,8 @@ routes.get('/', (request, response) => {
     return response.json({ message: 'API Happy' })
 })
 
-routes.post('/orphanages', OrphanagesController.create)
 routes.get('/orphanages', OrphanagesController.index)
+routes.get('/orphanages/:id', OrphanagesController.show)
+routes.post('/orphanages', OrphanagesController.create)
 
 export default routes
