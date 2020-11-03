@@ -61,7 +61,7 @@ export default {
 
         await orphanagesRepository.save(orphanage);
 
-        return response.json(OrphanageView.renderMany(orphanage));
+        return response.json(OrphanageView.render(orphanage));
     },
 
     async index(request: Request, response: Response) {
